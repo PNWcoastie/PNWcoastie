@@ -1,0 +1,45 @@
+name: Field-Station Telemetry Sync
+
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pnwcoastie-telemetry-sync
+  cancel-in-progress: false
+
+jobs:
+  synthesize-telemetry:
+    name: NOAA / USGS / Ephemeris Pass & Dual-Theme SVG Render
+    if: github.repository == 'PNWcoastie/PNWcoastie'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install stable Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Execute zero-dependency Rust telemetry & SVG synthesizer
+        run: cargo run --release
+
+      - name: Amend single-commit telemetry snapshot as github-actions[bot]
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/telemetry.hex assets/telemetry-dark.svg assets/telemetry-light.svg
+          if git diff --cached --quiet; then
+            echo "No telemetry delta to commit."
+            exit 0
+          fi
+          GIT_COMMITTER_NAME="github-actions[bot]" \
+          GIT_COMMITTER_EMAIL="41898282+github-actions[bot]@users.noreply.github.com" \
+          git commit --amend --no-edit --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          git push --force-with-lease
