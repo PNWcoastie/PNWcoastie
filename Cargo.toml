@@ -1,0 +1,17 @@
+[package]
+name = "pnwcoastie-telemetry"
+version = "0.1.0"
+edition = "2021"
+description = "Zero-dependency, #![forbid(unsafe_code)] North Oregon Coast field-station telemetry & dual-theme SVG instrument generator."
+license = "LicenseRef-Proprietary"
+publish = false
+
+[dependencies]
+# Intentionally empty: 100% pure Rust stdlib for sub-second cold CI compilation and zero supply-chain surface.
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

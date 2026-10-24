@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 104" width="840" height="104" role="img" aria-label="North Oregon Coast Field Station Telemetry">
+  <defs>
+    <linearGradient id="chassis-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f292c"/>
+      <stop offset="58%" stop-color="#182023"/>
+      <stop offset="100%" stop-color="#141b1e"/>
+    </linearGradient>
+    <linearGradient id="rim-sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6bc4a6" stop-opacity="0.05"/>
+      <stop offset="28%" stop-color="#6bc4a6" stop-opacity="0.42"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="78%" stop-color="#6bc4a6" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#6bc4a6" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="swell-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6bc4a6" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#6bc4a6" stop-opacity="0.0"/>
+    </linearGradient>
+    <clipPath id="chassis-clip">
+      <rect x="0.5" y="0.5" width="839" height="103" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#chassis-clip)">
+    <rect x="0.5" y="0.5" width="839" height="103" rx="8" fill="url(#chassis-bg)"/>
+    <rect x="0" y="78" width="840" height="26" fill="#101619"/>
+    <line x1="1" y1="1.2" x2="839" y2="1.2" stroke="url(#rim-sheen)" stroke-width="1.2"/>
+    <line x1="0" y1="78" x2="840" y2="78" stroke="#283539" stroke-width="1"/>
+    <line x1="312" y1="8" x2="312" y2="72" stroke="#283539" stroke-width="1"/>
+    <line x1="576" y1="8" x2="576" y2="72" stroke="#283539" stroke-width="1"/>
+
+    <!-- CELL 1: NORTH COAST MARINE (0..312) -->
+    <g>
+      <circle cx="16" cy="16" r="3" fill="#6bc4a6"/>
+      <text x="24" y="19" fill="#9bb0b5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.9">NORTH COAST MARINE</text>
+      <rect x="236" y="8" width="60" height="15" rx="4" fill="#152324" stroke="#2b4c46" stroke-width="0.8"/>
+      <text x="266" y="18.5" text-anchor="middle" fill="#6bc4a6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="600">▲ +7.1 ft</text>
+
+      <text x="14" y="45" fill="#f2f7f6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">4.3 ft <tspan fill="#6bc4a6" font-size="14" font-weight="600">@ 14s</tspan></text>
+      <text x="14" y="64" fill="#b5c7cb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10">1013.3 hPa · S 10kt · 55°F</text>
+
+      <line x1="186" y1="64" x2="296" y2="64" stroke="#263337" stroke-width="0.8"/>
+      <path d="M 186.0 49.6 C 188.6 46.7, 196.5 32.9, 201.7 31.9 C 207.0 30.9, 212.2 39.6, 217.4 43.7 C 222.7 47.8, 227.9 56.8, 233.1 56.8 C 238.4 56.8, 243.6 44.8, 248.9 43.7 C 254.1 42.6, 259.3 47.8, 264.6 50.2 C 269.8 52.6, 275.0 57.0, 280.3 58.1 C 285.5 59.2, 293.4 57.0, 296.0 56.8 L 296.0 64.0 L 186.0 64.0 Z" fill="url(#swell-fill)"/>
+      <path d="M 186.0 35.7 C 188.6 39.1, 196.5 52.9, 201.7 56.1 C 207.0 59.4, 212.2 58.0, 217.4 55.1 C 222.7 52.2, 227.9 40.2, 233.1 38.8 C 238.4 37.3, 243.6 45.2, 248.9 46.4 C 254.1 47.6, 259.3 43.8, 264.6 46.1 C 269.8 48.4, 275.0 60.1, 280.3 60.3 C 285.5 60.5, 293.4 49.6, 296.0 47.5" fill="none" stroke="#dfb46b" stroke-width="1.3" stroke-opacity="0.82" stroke-linecap="round"/>
+      <path d="M 186.0 49.6 C 188.6 46.7, 196.5 32.9, 201.7 31.9 C 207.0 30.9, 212.2 39.6, 217.4 43.7 C 222.7 47.8, 227.9 56.8, 233.1 56.8 C 238.4 56.8, 243.6 44.8, 248.9 43.7 C 254.1 42.6, 259.3 47.8, 264.6 50.2 C 269.8 52.6, 275.0 57.0, 280.3 58.1 C 285.5 59.2, 293.4 57.0, 296.0 56.8" fill="none" stroke="#6bc4a6" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="296.0" cy="56.8" r="4.5" fill="#6bc4a6" fill-opacity="0.25"/>
+      <circle cx="296.0" cy="56.8" r="2.3" fill="#6bc4a6"/>
+    </g>
+
+    <!-- CELL 2: CASCADIA SEISMIC (312..576) -->
+    <g>
+      <circle cx="328" cy="16" r="3" fill="#dfb46b"/>
+      <text x="336" y="19" fill="#9bb0b5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.9">CASCADIA SEISMIC</text>
+      <text x="326" y="45" fill="#f2f7f6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">6 <tspan font-size="13.5" font-weight="600" fill="#b5c7cb">events / 7d</tspan></text>
+      <text x="326" y="64" fill="#b5c7cb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10">M1.7 peak · 0.5 km depth</text>
+
+      <g transform="translate(476, 18)">
+        <line x1="0" y1="10" x2="88" y2="10" stroke="#263337" stroke-width="0.8"/>
+        <line x1="0" y1="42" x2="88" y2="42" stroke="#263337" stroke-width="0.8"/>
+        <path d="M 2 10 Q 46 18, 88 44" fill="none" stroke="#7b9095" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="14.4" cy="12.6" r="2.2" fill="#6bc4a6"/>
+        <circle cx="14.4" cy="12.6" r="9" fill="none" stroke="#dfb46b" stroke-width="0.9" stroke-opacity="0.38"/>
+        <circle cx="14.4" cy="12.6" r="5" fill="none" stroke="#dfb46b" stroke-width="1.1" stroke-opacity="0.68"/>
+        <circle cx="14.4" cy="12.6" r="2.3" fill="#dfb46b"/>
+      </g>
+    </g>
+
+    <!-- CELL 3: EPHEMERIS · 45.7°N 123.9°W (576..840) -->
+    <g>
+      <circle cx="592" cy="16" r="3" fill="#f5c469"/>
+      <text x="600" y="19" fill="#9bb0b5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.9">EPHEMERIS · 45.7°N 123.9°W</text>
+      <text x="588" y="45" fill="#f2f7f6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="18.5" font-weight="700" letter-spacing="-0.4">10h 09m <tspan font-size="10.5" font-weight="600" fill="#6bc4a6">-2m 54s</tspan></text>
+      <text x="588" y="64" fill="#b5c7cb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10">SOL -25.5° · LUNAR 71%</text>
+
+      <g transform="translate(726, 18)">
+        <line x1="0" y1="28" x2="72" y2="28" stroke="#263337" stroke-width="1"/>
+        <path d="M 6 28 Q 36 0 66 28" fill="none" stroke="#dfb46b" stroke-width="1.4" stroke-opacity="0.65" stroke-linecap="round"/>
+        <path d="M 6 28 Q 36 48 66 28" fill="none" stroke="#7b9095" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="2 2" stroke-linecap="round"/>
+        <circle cx="16.4" cy="33.7" r="6.0" fill="#f5c469" fill-opacity="0.16"/>
+        <circle cx="16.4" cy="33.7" r="3.2" fill="#dfb46b" stroke="#f5c469" stroke-width="1"/>
+        <circle cx="86" cy="22" r="9" fill="#233034" stroke="#485c62" stroke-width="0.9"/>
+        <path d="M 86.0 13.0 A 9.0 9.0 0 0 0 86.0 31.0 A 3.73 9.0 0 0 0 86.0 13.0 Z" fill="#dce7e9"/>
+      </g>
+    </g>
+
+    <!-- BOTTOM CALIBRATION BEZEL RAIL (y: 78..104) -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="#7b9095">
+      <text x="14" y="94">45.7°N 123.9°W · RING_BUF 28×16B [FNV1a: 0xE16C45AD]</text>
+      <text x="420" y="94" text-anchor="middle">RUSTC 1.99 · 0 EXTERNAL CRATES · #![forbid(unsafe_code)]</text>
+      <text x="826" y="94" text-anchor="end">PASS: 112 µs · SYNC 2026-10-31 12:30Z</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="839" height="103" rx="8" fill="none" stroke="#2f3e43" stroke-width="1"/>
+</svg>
