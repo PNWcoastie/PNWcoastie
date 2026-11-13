@@ -3,7 +3,7 @@
 I like building practical, reliable, low-footprint software and figuring out how complex systems behave under the hood...both at the silicon/OS boundary and inside frontier reasoning harnesses. Most of what you'll find here are tools, architectures, and stress-tests I built to answer my own questions: secure systems programming in Rust, security forensics, and deep-dive agentic orchestration. Always learning, usually tinkering, and happiest when a system is deterministic, fits comfortably in CPU cache, and holds up when pushed to its limits.
 
 - **Usual workbench:** Secure-by-construction Rust (`#![forbid(unsafe_code)]`), lock-free SPSC sidecars, clean-room security forensics, and Google Antigravity / the Google ecosystem.
-- **Agentic & model forensics:** Tearing down frontier model and harness architectures—comparative behavioral mechanics, security & context boundaries, and adversarial Maker–Checker orchestration pushed well past standard workflows.
+- **Agentic & model forensics:** Tearing down frontier model and harness architectures/comparative behavioral mechanics, security & context boundaries, and adversarial Maker–Checker orchestration pushed well past standard workflows.
 - **Current rabbit holes:** Chain-of-Thought (CoT) reasoning dynamics & recursive self-improvement (Dream / RSI) loops, sub-microsecond market microstructure, orthogonal volume/event clocks, stochastic control & thermodynamic math, and autonomous flight / SITL telemetry.
 
 ```diff
