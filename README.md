@@ -13,7 +13,7 @@ I am available for **fixed-scope milestones, custom software builds, and technic
 - **Full-Stack Web & Community Tools:** Role-gated team portals, dashboards, interactive web apps, and reliable low-footprint bots or deployment pipelines.
 - **Security Forensics & AI Workflows:** Binary/dependency auditing, compiler guardrails, and custom agentic evaluation harnesses.
 
-Want to talk through a project or custom setup? **[Start a GitHub Discussion](https://github.com/PNWcoastie/PNWcoastie/discussions)** or email **[jadedmatted@gmail.com](mailto:jadedmatted@gmail.com)**.
+Want to talk through a project or custom setup? **[Start a GitHub Discussion](https://github.com/PNWcoastie/PNWcoastie/discussions)**
 
 <details>
 <summary><kbd>▸ SYSTEM_MANIFEST.toml</kbd></summary>
